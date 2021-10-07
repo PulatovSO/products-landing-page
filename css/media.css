@@ -108,6 +108,11 @@
   .order__desc {
     margin-top: 53px;
   }
+
+  /* PAGE 3 ############ */
+  .effect__img1 {
+    display: none;
+  }
 }
 
 
@@ -339,6 +344,14 @@
 
   .order__paragraph {
     width: 438px;
+  }
+
+  /* EFFECT */
+  .effect__img2 {
+    display: none;
+  }
+  .effect__img1 {
+    display: inline-block;
   }
 }
 

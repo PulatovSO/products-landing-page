@@ -16,6 +16,7 @@ body {
   --logo-color: #173A56;
   --gray: #f5f5f5;
   --dark: #000;
+  --line: #E7E7E7;
 }
 
 .dark-mode {
@@ -25,6 +26,7 @@ body {
   --logo-color: #fff;
   --gray: #324047;
   --dark: #fff;
+  --line: #474747;
 }
 
 ul,
@@ -1030,12 +1032,15 @@ a {
 /* PRICING PAGE ######################################################### */
 
 .subtitle {
-  margin-top: 68px;
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
   text-transform: uppercase;
   color: var(--text-color);
+}
+
+.pricing__subtitle {
+  margin-top: 68px;
 }
 
 .pricing__title {
@@ -1052,7 +1057,9 @@ a {
 
 /* ENTERPRISE SECTION */
 #enterprise {
+  padding: 53px 0;
   margin: 150px 0;
+  background-image: linear-gradient(var(--gray), var(--light));
 }
 
 .enterprise__title {
@@ -1083,3 +1090,137 @@ a {
   background: transparent;
   color: var(--text-color);
 }
+/* /ENTERPRISE SECTION */
+
+
+/* EFFECTS SECTION */
+.effect__content {
+  margin-top: 53px;
+}
+
+.effect__img {
+  width: 100%;
+}
+
+.effect__desc {
+  margin-top: 32px;
+  text-align: left;
+  width: 334px;
+}
+
+.effect {
+  margin-bottom: 34px;
+}
+
+.effect__subtitle {
+  margin-bottom: 23px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--text-color);
+}
+
+.effect__subtitle::before {
+  content: '';
+  position: relative;
+  top: 15px;
+  margin-right: 15px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.effect:nth-child(1) .effect__subtitle::before {
+  background-image: url(../img/effect1.svg);
+}
+.effect:nth-child(2) .effect__subtitle::before {
+  background-image: url(../img/effect2.svg);
+}
+.effect:nth-child(3) .effect__subtitle::before {
+  background-image: url(../img/effect3.svg);
+}
+
+.effect__paragraph {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--text-color);
+}
+/* /EFFECTS SECTION */
+
+
+/* FAQ SECTION */
+#faq {
+  margin-top: 150px;
+}
+
+.faq__list {
+  max-width: 920px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.faq__item {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  padding: 22px 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  border-bottom: 1px solid var(--line);
+}
+
+.faq__item button {
+  margin-left: 40px;
+  position: relative;
+  color: var(--text-color);
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.faq__item button::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -40px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  border-radius: 50%;
+  background-image: url(../img/plus_circle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: all 0.3s ease-in-out;
+}
+
+.rotate {
+  transform: rotate(40deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.faq__content {
+  margin-top: 14px;
+  display: none;
+  text-align: left;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.display {
+  display: inline-block;
+}
+/* /FAQ SECTION */
+
+
