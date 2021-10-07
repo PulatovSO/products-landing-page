@@ -15,6 +15,7 @@ body {
   --light: #fff;
   --logo-color: #173A56;
   --gray: #f5f5f5;
+  --dark: #000;
 }
 
 .dark-mode {
@@ -23,9 +24,11 @@ body {
   --light: #22343d;
   --logo-color: #fff;
   --gray: #324047;
+  --dark: #fff;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
 }
 
@@ -690,6 +693,8 @@ a {
 
 /* COMPANY SECTION */
 #company {
+  width: 90%;
+  margin: 0 auto;
   margin-top: 100px;
 }
 
@@ -847,7 +852,7 @@ a {
 
 .footer__copyright {
   margin-top: 38px;
-  margin-bottom: 83px;
+  margin-bottom: 33px;
   text-align: center;
   font-weight: normal;
   font-size: 16px;
@@ -870,6 +875,7 @@ a {
 .logos__logo {
   margin-bottom: 53px;
 }
+
 /* /LOGOS */
 
 
@@ -902,14 +908,14 @@ a {
   background-size: cover;
 }
 
-.procard:nth-child(1)::before {
+.procard1::before {
   background-image: url(../img/buil-card__icon1.svg);
 }
-.procard:nth-child(2)::before {
+.procard2::before {
   background-image: url(../img/buil-card__icon2.svg);
 }
-.procard:nth-child(3)::before {
-  background-image: url(../img/buil-card__icon3.svg);
+.procard3::before {
+  background-image: url(../img/procard__heart.svg);
 }
 
 .procard__title {
@@ -917,9 +923,163 @@ a {
   text-align: center;
   letter-spacing: 0.1px;
 }
-
 /* /PRODUCT */
 
 
+/* WORK SECTION */
+#work {
+  margin-top: 101px;
+}
+
+.work__orders {
+  margin-top: 73px;
+}
+
+.order {
+  margin-bottom: 105px;
+}
+
+.order__desc {
+  text-align: left;
+}
+
+.order__step {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: var(--text-color);
+}
+
+.order__title {
+  margin: 16px 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--text-color);
+}
+
+.order__paragraph {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.order__paragraph br {
+  display: none;
+}
+/* /WORK SECTION */
+
+/* JOIN SECTION */
+#join {
+  padding: 25px 0;
+  background-image: linear-gradient(var(--gray), var(--light));
+}
+
+.business__title,
+.enterprise__title {
+  margin-top: 27px;
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--dark);
+}
+
+.business__item, 
+.enterprise__item {
+  margin-bottom: 16px;
+  color: var(--text-color);
+}
+
+.business__paragraph,
+.enterprise__paragraph {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--dark);
+}
+
+.join__section {
+  margin-top: 85px;
+}
+
+.business::before {
+  content: '';
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: #ffefef;
+  background-image: url(../img/Activity1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 100px;
+}
+.enterprise::before {
+  content: '';
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: #f2f6ff;
+  background-image: url(../img/activity2.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 100px;
+}
+/* /JOIN SECTION */
 
 
+/* PRICING PAGE ######################################################### */
+
+.subtitle {
+  margin-top: 68px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.pricing__title {
+  margin-top: 32px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--text-color);
+}
+
+.pricing__cards {
+  margin-top: 30px;
+}
+
+/* ENTERPRISE SECTION */
+#enterprise {
+  margin: 150px 0;
+}
+
+.enterprise__title {
+  color: var(--text-color);
+}
+
+.enterprise__btn {
+  margin-top: 32px;
+  padding: 11px 18px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  display: inline-block;
+  background: var(--btn-color);
+  border: 1px solid var(--btn-color);
+  border-radius: 8px;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.enterprise__btn:hover {
+  background: transparent;
+  color: var(--text-color);
+  border-color: #BCD0E5;
+}
+
+.enterprise__btn:hover {
+  background: transparent;
+  color: var(--text-color);
+}
