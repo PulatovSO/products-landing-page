@@ -418,7 +418,7 @@ a {
 }
 
 .strategy {
-  margin-top: 15px;
+  margin: 15px;
   display: inline-block;
   background: #fff;
   border: 1px solid #BCD0E5;
@@ -427,6 +427,7 @@ a {
 
 .strategy__img {
   border-radius: 8px 8px 0px 0px;
+  width: 100%;
 }
 
 .strategy__desc {
@@ -473,6 +474,31 @@ a {
 .carousel__dot:nth-child(2) {
   margin: 0 10px;
   background: var(--btn-color);
+}
+
+.strategy__link {
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--text-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.strategy__link i {
+  position: relative;
+  top: 3px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.strategy__link:hover {
+  color: var(--btn-color);
+}
+.strategy__link:active i {
+  background: var(--btn-color);
+  color: #fff;
 }
 /* /STRATEGY SECTION */
 
@@ -1156,6 +1182,7 @@ a {
 /* FAQ SECTION */
 #faq {
   margin-top: 150px;
+  margin-bottom: -90px;
 }
 
 .faq__list {
@@ -1222,5 +1249,98 @@ a {
   display: inline-block;
 }
 /* /FAQ SECTION */
+
+
+/* RESOURCES PAGE ################################################################# */
+
+/* GREAT SECTION */
+
+.great__paragraph {
+  margin-top: 16px;
+}
+
+.great__form {
+  position: relative;
+  width: 346px;
+}
+
+.great__input {
+  padding: 22px;
+  width: 346px;
+  border: 1px solid #EAEAEA;
+  color: var(--text-color);
+  box-sizing: border-box;
+  border-radius: 100px;
+  background: var(--light);
+  outline: none;
+}
+
+.great__btn {
+  padding: 15px 20px;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  background: var(--btn-color);
+  color: #fff;
+  border-radius: 100px;
+  border: none;
+  border: 1px solid var(--btn-color);
+  transform: translateY(-50%);
+  outline: transparent;
+}
+
+/* --------------------- */
+
+.joined {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  position: relative;
+}
+
+.joined__button {
+  background: none;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  outline: transparent;
+}
+
+.joined .joined__item:nth-child(2) {
+  position: relative;
+  left: -30px;
+}
+
+.joined .joined__item:nth-child(3) {
+  position: relative;
+  left: -50px;
+}
+
+.joined__user-img {
+  border-radius: 50%;
+}
+
+.joined__text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 70px;
+  color: var(--text-color);
+  transform: translateY(-50%);
+}
+.joined__text span {
+  color: var(--btn-color);
+}
+.great__img {
+  width: 100%;
+}
+/* /GREAT SECTION */
+
+/* CONTACTS SECTION */
+#contacts {
+  margin-top: 160px;
+}
+/* CONTACTS SECTION */
+
 
 
