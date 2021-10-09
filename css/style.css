@@ -17,6 +17,7 @@ body {
   --gray: #f5f5f5;
   --dark: #000;
   --line: #E7E7E7;
+  --form-bg: #fff;
 }
 
 .dark-mode {
@@ -27,6 +28,7 @@ body {
   --gray: #324047;
   --dark: #fff;
   --line: #474747;
+  --form-bg: var(--gray);
 }
 
 ul,
@@ -728,8 +730,10 @@ a {
 
 .company__wrap {
   padding: 20px 25px;
+  /* width: 75%; */
   background: var(--btn-color);
   border-radius: 32px;
+  /* max-height: 400px; */
 }
 
 .company__title {
@@ -1339,6 +1343,102 @@ a {
 /* CONTACTS SECTION */
 #contacts {
   margin-top: 160px;
+}
+
+.contacts__socials {
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background: #edfffc;
+  border-radius: 50%;
+}
+
+.contacts__social i {
+  color: var(--btn-color);
+  font-size: 32px;
+}
+
+.contacts__social:nth-child(2) {
+  margin: 0 21px;
+}
+
+.contacts__map {
+  margin: 0 auto;
+}
+
+.contacts__map iframe {
+  margin-top: 65px;
+  height: 323px;
+  width: 100%;
+  border: none;
+}
+
+.contacts__form {
+  margin: 0 auto;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  height: 670px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: none;
+}
+
+.forms__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.1px;
+  color: var(--text-color);
+}
+
+.forms input {
+  margin-top: 45px;
+  padding: 20px 19px;
+  background: #F5F5F5;
+  border: 1px solid #E8E8E8;
+  box-sizing: border-box;
+  border-radius: 39px;
+  outline: unset;
+}
+
+.forms textarea {
+  padding: 25px;
+  margin-top: 45px;
+  height: 193px;
+  background: #F5F5F5;
+  border: 1px solid #E8E8E8;
+  box-sizing: border-box;
+  outline: unset;
+}
+
+.forms__btn {
+  margin-top: 63px;
+  width: 145px;
+  height: 52px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  background: var(--btn-color);
+  color: #fff;
+  border-radius: 35px;
+  border: 1px solid var(--btn-color);
+  outline: unset;
+}
+
+.forms__btn:hover {
+  background: transparent;
+  color: var(--text-color);
 }
 /* CONTACTS SECTION */
 

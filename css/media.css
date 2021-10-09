@@ -161,6 +161,11 @@
     width:unset
   }
 
+  .company__wrap {
+    padding: 0px 25px;
+    width: 75%;
+  }
+
   /* RESOURCE PAGE ############### */
   .great__paragraph {
     width: 70%;
@@ -218,6 +223,10 @@
   }
   .great__form {
     margin-right: 0;
+  }
+
+  .company__wrap {
+    width: 70%;
   }
 }
 
@@ -325,6 +334,12 @@
     margin: 0 auto;
   }
 
+  .company__wrap {
+    padding: 0px 25px;
+    width: 75%;
+    max-height: 400px;
+  }
+
   .company__desc {
     display: flex;
     flex-direction: column;
@@ -427,6 +442,19 @@
 
   .joined__text {
     margin-left: 70px;
+  }
+
+  .contacts__form {
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 670px;
+    background: var(--form-bg);
+    border: 1px solid var(--gray);
+    box-sizing: border-box;
+    border-radius: 20px;
   }
 
 }
